@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Reserva de Auditório - SENAI Birigui</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="chat.css" />
+    <link rel="shortcut icon" href="https://sp.senai.br/images/favico/apple-icon-57x57.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="assets/senai_logo.png" alt="SENAI Logo" class="logo">
+                    <div class="school-info">
+                        <h1 class="school-name">SENAI Birigui</h1>
+                        <p class="school-subtitle">Avak Bedouian</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#como-funciona" class="nav-link">Como Funciona</a>
+                    <a href="#beneficios" class="nav-link">Benefícios</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        Reserve o Auditório do <span class="highlight">SENAI Birigui</span> com Facilidade
+                    </h2>
+                    <p class="hero-subtitle">
+                        Agendamento rápido e intuitivo via chat com inteligência artificial, integrado ao Google Calendar.
+                    </p>
+                    <button class="btn btn-primary" onclick="openChat()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Quero agendar agora
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/auditorio_1.jpg" alt="Auditório SENAI" class="main-image">
+                    <div class="status-card">
+                        <div class="status-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="status-text">
+                            <p class="status-title">Disponível Agora</p>
+                            <p class="status-subtitle">Reserva em tempo real</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Auditório -->
+    <section id="sobre" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">O Auditório Ideal para Seus Eventos</h3>
+                <p class="section-description">
+                    Nosso auditório oferece infraestrutura completa para palestras, workshops, reuniões e apresentações, 
+                    com capacidade para diversos participantes e equipamentos de última geração.
+                </p>
+            </div>
+
+            <!-- Recursos -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon bg-red">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">Grande Capacidade</h4>
+                    <p class="feature-description">Espaço amplo para acomodar diversos participantes confortavelmente.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">Localização Central</h4>
+                    <p class="feature-description">Fácil acesso no SENAI Birigui "Avak Bedouian".</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon bg-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h4 class="feature-title">Equipamentos Modernos</h4>
+                    <p class="feature-description">Projetor, sistema de som, ar condicionado e mais.</p>
+                </div>
+            </div>
+
+            <!-- Galeria de Imagens -->
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img src="assets/auditorio_1.jpg" alt="Auditório 1" class="gallery-image active" data-index="0">
+                    <img src="assets/auditorio_2.jpg" alt="Auditório 2" class="gallery-image" data-index="1">
+                    <img src="assets/auditorio_3.jpg" alt="Auditório 3" class="gallery-image" data-index="2">
+                    <img src="assets/auditorio_4.jpg" alt="Auditório 4" class="gallery-image" data-index="3">
+                    
+                    <button class="gallery-btn gallery-btn-prev" onclick="changeImage(-1)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="gallery-btn gallery-btn-next" onclick="changeImage(1)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="gallery-dots">
+                    <button class="dot active" onclick="goToImage(0)"></button>
+                    <button class="dot" onclick="goToImage(1)"></button>
+                    <button class="dot" onclick="goToImage(2)"></button>
+                    <button class="dot" onclick="goToImage(3)"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="section bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Como Reservar em 3 Passos Simples</h3>
+                <p class="section-description">Um processo rápido e descomplicado</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="step-title">Inicie o Chat</h4>
+                        <p class="step-description">
+                            Clique no botão para conversar com nossa inteligência artificial. 
+                            O chat está disponível 24/7 para sua conveniência.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h4 class="step-title">Informe os Detalhes</h4>
+                        <p class="step-description">
+                            A IA coletará informações como data, horário, duração e finalidade do evento. 
+                            Responda de forma natural e conversacional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h4 class="step-title">Confirme e Pronto</h4>
+                        <p class="step-description">
+                            A IA verificará a disponibilidade no Google Calendar e confirmará sua reserva 
+                            instantaneamente. Você receberá um e-mail de confirmação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">Vantagens de Reservar com a IA</h3>
+                <p class="section-description">Tecnologia a serviço da sua produtividade</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-red">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h4 class="benefit-title">Rapidez</h4>
+                        <p class="benefit-description">Complete seu agendamento em poucos minutos, sem burocracia ou formulários complexos.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h4 class="benefit-title">Disponibilidade em Tempo Real</h4>
+                        <p class="benefit-description">Consulta instantânea ao Google Calendar para verificar horários disponíveis.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h4 class="benefit-title">Conveniência</h4>
+                        <p class="benefit-description">Reserve a qualquer hora, de qualquer lugar, através de uma conversa natural.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h4 class="benefit-title">Eficiência</h4>
+                        <p class="benefit-description">Elimine trocas de e-mails e ligações telefônicas demoradas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h3 class="cta-title">Pronto para Reservar?</h3>
+                <p class="cta-description">
+                    Simplificamos o processo de agendamento do auditório. Utilize nossa inteligência 
+                    artificial para realizar o agendamento do auditório!
+                </p>
+                <button class="btn btn-white" onclick="openChat()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Agendar Agora
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/senai_logo.png" alt="SENAI Logo" class="footer-logo">
+                    <p class="footer-text">
+                        SENAI Birigui - Avak Bedouian<br>
+                        Excelência em educação profissional
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre" class="footer-link">Sobre o Auditório</a></li>
+                        <li><a href="#como-funciona" class="footer-link">Como Funciona</a></li>
+                        <li><a href="#beneficios" class="footer-link">Benefícios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <p class="footer-text">
+                        SENAI Birigui "Avak Bedouian"<br>
+                        Birigui - SP
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SENAI Birigui. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat para Reservar Horario -->
+    <div id="exibeChat"></div>
+
+    <script src="script.js"></script>
+
+     <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://n8n.kessin.com.br/webhook/b1c82047-0c49-4940-b681-00f87858ce9b/chat',
+            target: '#exibeChat',
+            defaultLanguage: 'pt_br',
+            initialMessages: [
+                'Olá como posso ajuda-lo?'
+            ],
+            i18n: {
+                pt_br: {
+                    title: 'SENAI Birigui',
+                    subtitle: "Estamos aqui para ajudar você 24 horas por dia, 7 dias por semana.",
+                    footer: '',
+                    getStarted: 'New Conversation',
+                    inputPlaceholder: 'Digite sua mensagem..',
+                },
+            },
+        });
+    </script>
+</body>
+</html>
